@@ -1,0 +1,26 @@
+<dog-navbar></dog-navbar>
+
+<div class="container">
+
+    <h1>Dog Gallery</h1>
+
+    Search: <input type="text" ng-model="query" /> Order By: <select ng-model="orderProp">
+                <option value="brand">Brand</option>
+                <option value="model">Model</option>
+                <option value="year">Year</option>
+              </select>
+    <button type="button" class="btn btn-default" ng-click="updateImages()">Update Images</button>
+              
+    <table class="table">
+        <tr>
+            <th ng-click="sortBy('breed')">Breed</th>
+        </tr>
+<!--
+        <tr ng-repeat="breed in breeds | filter : filterBrandAndModel | orderBy: orderProp : true" ng-dblclick="openCar(car)" ng-class="{'red-selected': car.selected}">
+-->
+        <tr ng-repeat="breed in breeds">
+                <td>{{$scope.breeds.breed}}</td>
+        </tr>
+    </table>
+
+</div>

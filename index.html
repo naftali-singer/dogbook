@@ -12,16 +12,18 @@
     <script src="app/app.js"></script>
     <script src="app/nav/navDirective.js"></script>
     <script src="app/nav/navCtrl.js"></script>
-<!--
+    <script src="app/model/breed.js"></script>
+    <script src="app/model/breeds.js"></script>    
+    <script src="app/gallery/breedGalleryCtrl.js"></script>
+    <!--
     <script src="app/model/dog.js"></script>
-    <script src="app/model/dogs.js"></script>
-    <script src="app/gallery/dogGalleryCtrl.js"></script>
     <script src="app/details/dogDetailsCtrl.js"></script>
+
     <link rel="stylesheet" href="css/style.css">
 -->
     <title>Dog Book</title>
 </head>
-<body ng-app="dogApp" ng-controller="TestCtrl">
+<body ng-app="dogApp" ng-controller="breedGalleryCtrl">
     <ng-dog-navbar></ng-dog-navbar>
   {{5+5}}
     <ng-view></ng-view>
