@@ -19,7 +19,7 @@
         <tr ng-repeat="breed in breeds | filter : filterBrandAndModel | orderBy: orderProp : true" ng-dblclick="openCar(car)" ng-class="{'red-selected': car.selected}">
 -->
         <tr ng-repeat="breed in breeds">
-                <td>{{$scope.breeds.breed}}</td>
+                <td>{{breed.breed}}</td>
         </tr>
     </table>
 
